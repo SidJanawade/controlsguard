@@ -1,0 +1,8 @@
+starlette>=0.37
+uvicorn>=0.30
+numpy>=1.26
+scikit-learn>=1.4
+networkx>=3.2
+mcp>=1.2
+# Optional: run the agent nodes on the real LangGraph runtime (see src/controlsguard/langgraph_app.py)
+# langgraph>=0.2

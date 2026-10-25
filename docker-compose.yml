@@ -1,0 +1,10 @@
+services:
+  controlsguard:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      CG_LLM_PROVIDER: ${CG_LLM_PROVIDER:-mock}   # mock | anthropic | openai
+      CG_LLM_MODEL: ${CG_LLM_MODEL:-}
+      CG_LLM_API_KEY: ${CG_LLM_API_KEY:-}
+      CG_LLM_BASE_URL: ${CG_LLM_BASE_URL:-}
+      CG_API_KEY: ${CG_API_KEY:-}                  # set to require X-API-Key on the API
